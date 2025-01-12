@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.medioman">
+    <!-- Add the location permissions here -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Medioman"
+        tools:targetApi="31">
+        <activity
+            android:name=".TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFAQActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".FAQActivity21F21817"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.medioman.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUsActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity21F21817"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCi9FsHtAdWElVdeGE-LGtXjBobXP08eNE" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".EmergencyFirstAidActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAmbulanceActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".SOSAlertActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboardActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity21F21817"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity21F21817"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Existing colors -->
+    <color name="black">#150d06</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="lightGray">#D3D3D3</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="background_light">#F5F7FA</color>
+    <color name="text_primary">#2B2E4A</color>
+    <color name="text_secondary">#757575</color>
+    <color name="button_primary">#0058A2</color>
+    <color name="border_color">#D1D9E6</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="button_secondary">#03DAC5</color>
+
+    <!-- Custom colors for MediOman -->
+    <color name="pink_color">#e21b46</color> <!-- Pink -->
+    <color name="blue_color">#9cdbfc</color> <!-- Blue -->
+    <color name="light_yellow">#f6bb59</color> <!-- Light Yellow -->
+    <color name="darker_yellow">#f89f55</color> <!-- Darker Yellow -->
+    <color name="black_color">#150d06</color> <!-- Black -->
+
+
+</resources>

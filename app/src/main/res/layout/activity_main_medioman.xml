@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Splash Screen Logo -->
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="262dp"
+        android:layout_height="223dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_mediomanlogo"
+        android:contentDescription="MediOman Logo"/>
+
+    <!-- App Name Below the Logo -->
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MediOman"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/splashLogo"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black" />
+
+    <!-- Optional: Version number at the bottom -->
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/gray" />
+
+</RelativeLayout>

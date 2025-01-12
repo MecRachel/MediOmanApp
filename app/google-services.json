@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395588092126",
+    "project_id": "medioman-c9711",
+    "storage_bucket": "medioman-c9711.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395588092126:android:c8802909572d718234024f",
+        "android_client_info": {
+          "package_name": "com.example.medioman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi9FsHtAdWElVdeGE-LGtXjBobXP08eNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

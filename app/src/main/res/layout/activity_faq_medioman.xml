@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- FAQ Content wrapped in CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:radius="8dp"
+        android:layout_marginBottom="16dp">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- FAQ Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: How do I send an SOS alert as a user?"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Expand/Collapse Arrow, positioned to the far right -->
+                    <ImageButton
+                        android:id="@+id/arrow1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Expand/Collapse"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
+                <!-- Answer (Initially hidden) -->
+                <TextView
+                    android:id="@+id/answer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A: After logging in, click the SOS icon on the user dashboard. You will be taken to the SOS alert screen. If GPS is off, you will be prompted to turn it on. Hold the 'Send SOS Alert' button for 5 seconds to send an alert to the nearest hospital (within 20-25 km)."
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- FAQ Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: How do I track the ambulance?"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Expand/Collapse Arrow, positioned to the far right -->
+                    <ImageButton
+                        android:id="@+id/arrow2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Expand/Collapse"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
+                <!-- Answer (Initially hidden) -->
+                <TextView
+                    android:id="@+id/answer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A: You can track the ambulance's status and ETA on the 'View Ambulance' screen. It will show whether your SOS alert was accepted and provide real-time updates on the ambulance's location."
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- FAQ Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: Can I cancel an SOS alert after sending it?"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Expand/Collapse Arrow, positioned to the far right -->
+                    <ImageButton
+                        android:id="@+id/arrow3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Expand/Collapse"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
+                <!-- Answer (Initially hidden) -->
+                <TextView
+                    android:id="@+id/answer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A: Yes, if you sent an SOS alert by mistake, you can cancel it directly from the 'View Ambulance' screen under the specific alert you sent."
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- FAQ Item 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: Can I access emergency first aid information?"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Expand/Collapse Arrow, positioned to the far right -->
+                    <ImageButton
+                        android:id="@+id/arrow4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Expand/Collapse"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
+                <!-- Answer (Initially hidden) -->
+                <TextView
+                    android:id="@+id/answer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A: Yes, users can access quick first aid information on the 'Emergency First Aid' screen, which provides essential medical steps in critical situations."
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- FAQ Item 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: How can I provide feedback?"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Expand/Collapse Arrow, positioned to the far right -->
+                    <ImageButton
+                        android:id="@+id/arrow5"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Expand/Collapse"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
+                <!-- Answer (Initially hidden) -->
+                <TextView
+                    android:id="@+id/answer5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A: You can provide feedback about your experience directly on the 'Feedback' screen, where you can share your thoughts and suggestions."
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- FAQ Item 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: Can I update my profile information?"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Expand/Collapse Arrow, positioned to the far right -->
+                    <ImageButton
+                        android:id="@+id/arrow6"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Expand/Collapse"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
+                <!-- Answer (Initially hidden) -->
+                <TextView
+                    android:id="@+id/answer6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="A: Yes, you can update your profile information via the 'View Profile' screen. This feature is available only to registered users."
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- FAQ Item 7 (For Guests) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q: What features are available for guests?"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Expand/Collapse Arrow, positioned to the far right -->
+                    <ImageButton
+                        android:id="@+id/arrow7"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Expand/Collapse"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
+                <!-- Answer (Initially hidden) -->
+                <TextView
+                    android:id="@+id/answer7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A: Guests can access most of the app features, but cannot create or update a profile. To fully access the profile section, guests need to register as a user."
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="426dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom_background2" />
+</LinearLayout>
