@@ -54,3 +54,18 @@ The project aligns with **Oman Vision 2040**, which promotes technological innov
 
 ## 📸 Screenshots
 
+Below are screenshots from the MediOman mobile application:
+
+![Screenshot 557](Screenshot%20(557).png)  
+![Screenshot 558](Screenshot%20(558).png)  
+![Screenshot 559](Screenshot%20(559).png)  
+![Screenshot 560](Screenshot%20(560).png)  
+![Screenshot 561](Screenshot%20(561).png)  
+![Screenshot 562](Screenshot%20(562).png)  
+![Screenshot 563](Screenshot%20(563).png)  
+![Screenshot 564](Screenshot%20(564).png)  
+![Screenshot 565](Screenshot%20(565).png)  
+![Screenshot 567](Screenshot%20(567).png)  
+![Screenshot 570](Screenshot%20(570).png)  
+![Screenshot 572](Screenshot%20(572).png)
+
